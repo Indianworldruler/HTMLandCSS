@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      padding: 10px; /* Self padding for the whole table */
+      background-color: #f2f2f2; /* Light gray background for the table */
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 12px; /* Padding inside each cell */
+    }
+    th {
+      text-align: center; /* Centers the text in header cells */
+      background-color: #4CAF50; /* Green background for header cells */
+      color: white; /* White text in header cells */
+    }
+    td {
+      text-align: left; /* Left-aligns the text in data cells */
+      background-color: #ffffff; /* White background for data cells */
+    }
+    .nested-table {
+      width: 100%;
+      margin-top: 10px;
+      background-color: #e0e0e0; /* Light background for nested tables */
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>Personal Information Table</caption>
+  <tr>
+    <th colspan="2">Personal Info</th>
+    <th>Country</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Alice</td>
+    <td>Age: 25</td>
+    <td>USA</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Hobby: Reading</td>
+        </tr>
+        <tr>
+          <td>Profession: Engineer</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Age: 30</td>
+    <td>Canada</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Hobby: Traveling</td>
+        </tr>
+        <tr>
+          <td>Profession: Teacher</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>Age: 28</td>
+    <td>UK</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Hobby: Soccer</td>
+        </tr>
+        <tr>
+          <td>Profession: Doctor</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Charlie</td>
+    <td>Age: 35</td>
+    <td>Australia</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Hobby: Photography</td>
+        </tr>
+        <tr>
+          <td>Profession: Photographer</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
