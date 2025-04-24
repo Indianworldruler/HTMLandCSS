@@ -1,0 +1,20 @@
+p {
+    color:aqua;
+    border: solid 8px red;
+    background-color: orange;
+    padding: 8px;
+    font-size: 30px;
+}
+
+.div1 {
+    background-color:aquamarine;
+    border: solid 10px pink;
+}
+
+.rotate {
+    transition: transform 0.6s ease-in-out;
+}
+
+.rotate:hover {
+    transform: rotate(360deg);
+}
