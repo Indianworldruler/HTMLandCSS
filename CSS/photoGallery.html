@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masonry Photo Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      grid-auto-flow: dense;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      z-index: 1;
+    }
+
+    /* Size variations for masonry effect */
+    .tall {
+      grid-row: span 2;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .wide {
+        grid-column: span 1;
+      }
+
+      .tall {
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Masonry Gallery</h1>
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1016/300/600" class="tall" alt="">
+    <img src="https://picsum.photos/id/1018/600/600" alt="">
+    <img src="https://picsum.photos/id/1020/300/300" alt="">
+    <img src="https://picsum.photos/id/1024/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1025/300/500" class="tall" alt="">
+    <img src="https://picsum.photos/id/1031/300/300" alt="">
+    <img src="https://picsum.photos/id/1033/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1035/300/500" class="tall" alt="">
+    <img src="https://picsum.photos/id/1040/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1041/300/500" class="tall" alt="">
+    <img src="https://picsum.photos/id/1042/300/300" alt="">
+    <img src="https://picsum.photos/id/1043/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1044/300/500" class="tall" alt="">
+    <img src="https://picsum.photos/id/1045/300/300" alt="">
+    <img src="https://picsum.photos/id/1049/600/400" class="wide" alt="">
+    <img src="https://picsum.photos/id/1050/300/500" class="tall" alt="">
+    <img src="https://picsum.photos/id/1051/300/300" alt="">
+  </div>
+</body>
+</html>
